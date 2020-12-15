@@ -1,5 +1,38 @@
 ## Welcome to GitHub Pages
 
+
+<h1 align="center">
+  <br>
+Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
+  <br>
+</h1>
+  <p align="center">
+    <a href="https://github.com/taldatech">Tal Daniel</a> •
+    <a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
+
+  </p>
+
+  [Code]() [Paper]()
+
+<h4 align="center">
+    <a href="https://colab.research.google.com/github/taldatech/soft-intro-vae-pytorch"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+</h4>
+
+
+<p align="center">
+  <img src="./assets/ffhq_samples.png">
+</p>
+
+# Soft-IntroVAE
+
+> **Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders**<br>
+> Tal Daniel, Aviv Tamar<br>
+>
+> **Abstract:** *The recently introduced introspective variational autoencoder (IntroVAE) exhibits outstanding image generations, and allows for amortized inference using an image encoder. The main idea in IntroVAE is to train a VAE adversarially, using the VAE encoder to discriminate between generated and real data samples. However, the original IntroVAE loss function relied on a particular hinge-loss formulation that is very hard to stabilize in practice, and its theoretical convergence analysis ignored important terms in the loss.
+In this work, we take a step towards better understanding of the IntroVAE model, its practical implementation, and its applications. We propose the Soft-IntroVAE, a modified IntroVAE that replaces the hinge-loss terms with a smooth exponential loss on generated samples. This change significantly improves training stability, and also enables theoretical analysis of the complete algorithm. Interestingly, we show that the IntroVAE converges to a distribution that minimizes a sum of KL distance from the data distribution and an entropy term. We discuss the implications of this result, and demonstrate that it induces competitive image generation and reconstruction. Finally, we describe an application of Soft-IntroVAE to unsupervised image translation, and demonstrate compelling results.*
+
+
+
 You can use the [editor on GitHub](https://github.com/taldatech/soft-intro-vae-web/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 $$ X^2 = C $$
 
