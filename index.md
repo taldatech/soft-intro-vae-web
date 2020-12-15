@@ -44,10 +44,10 @@ Comparing to GANs, the discriminatory signal comes from the encoder (the ELBO ac
 
 The objective of Soft-IntroVAE is written as follows:
 
-$$ \mathcal{L}_{E_{\phi}}(x,z) = s \cdot(\beta_{rec}\mathcal{L}_r(x) +\beta_{kl}KL(x)) + \frac{1}{2}\exp(-2s\cdot (\beta_{rec}\mathcal{L}_r(D_{\theta}(z)) + \beta_{neg}KL(D_{\theta}(z)))), $$
+$$ \mathcal{L}_{E_{\phi}}(x,z) =  $$
 
 
-$$ \mathcal{L}_{D_{\theta}}(x,z) = s \cdot \beta_{rec}\mathcal{L}_r(x) +s \cdot(\beta_{kl}KL(D_{\theta}(z)) +\gamma_r \cdot \beta_{rec}\mathcal{L}_r(D_{\theta}(z))) $$
+$$ \mathcal{L}_{D_{\theta}}(x,z) = $$
 
 
 <p align="center">
