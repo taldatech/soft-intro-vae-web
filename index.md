@@ -11,8 +11,12 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
     <a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
 
   </p>
+  
+<h4 align="center">
+	[Code]()|[Paper]()
+</h4>
 
-  [Code]() [Paper]()
+  
 
 <h4 align="center">
     <a href="https://colab.research.google.com/github/taldatech/soft-intro-vae-pytorch"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -20,7 +24,7 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
 
 
 <p align="center">
-  <img src="./assets/ffhq_samples.png">
+  <img src="https://github.com/taldatech/soft-intro-vae-web/raw/main/assets/ffhq_samples.png" style="height:250px">
 </p>
 
 # Soft-IntroVAE
