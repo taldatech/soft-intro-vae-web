@@ -1,2 +1,2 @@
-# soft-intro-vae-web
+# Soft-IntroVAE
 Project site for Soft-IntroVAE
