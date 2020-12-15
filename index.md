@@ -13,7 +13,7 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
   </p>
   
 <h4 align="center">
-	[Code]()|[Paper]()
+	<a href="">Code</a>|<a href="">Paper</a>
 </h4>
 
   
@@ -25,6 +25,7 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
 
 <p align="center">
   <img src="https://github.com/taldatech/soft-intro-vae-web/raw/main/assets/ffhq_samples.png" style="height:250px">
+  <img src="https://github.com/taldatech/soft-intro-vae-web/blob/main/assets/celebahq_recons.png" style="height:250px">
 </p>
 
 # Soft-IntroVAE
