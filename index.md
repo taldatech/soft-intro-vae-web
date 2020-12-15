@@ -49,7 +49,7 @@ $$ \mathcal{L}_{E_{\phi}}(x,z) = s \cdot(\beta_{rec}\mathcal{L}_r(x) +\beta_{kl}
 
 $$ \mathcal{L}_{D_{\theta}}(x,z) = s \cdot \beta_{rec}\mathcal{L}_r(x) +s \cdot(\beta_{kl}KL(D_{\theta}(z)) +\gamma_r \cdot \beta_{rec}\mathcal{L}_r(D_{\theta}(z))) $$
 
-where \\( \mathcal{L}_r(x) = - \mathbb{E}_{q_{\phi}(z\mid x)}\left[\log p_{\theta}(x \mid z)\right] \\) denotes the reconstruction error, \\(s\\) is a scaling constant which is set to the inverse of the input dimensions, and \\(\beta_{rec}, \beta_{kl}, \beta_{neg}\\) and \\(\gamma_r\\) are hyperparameters. 
+where \\( \mathcal{L}_r(x) = - \mathbb{E}_{q_{\phi}(z| x)} [\log p_{\theta}(x \mid z)] \\) denotes the reconstruction error, \\(s\\) is a scaling constant which is set to the inverse of the input dimensions, and \\(\beta_{rec}, \beta_{kl}, \beta_{neg}\\) and \\(\gamma_r\\) are hyperparameters. 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/sintrovae_flow.PNG" style="height:350px">
