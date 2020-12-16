@@ -81,7 +81,7 @@ In the following figures, we show samples (left) and reconstructions of test dat
 Next, the following figure shows smooth interpolation between the latent vectors of two images from S-IntroVAE trained on the CelebA-HQ dataset.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/celeba_interpolations.jpg" style="width:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/celeba_interpolations.jpg" style="width:500px">
 </p>
 
 ### Other Applications
