@@ -58,12 +58,31 @@ $$ \mathcal{L}_{D_{\theta}}(x,z) = $$
 ### Results
 
 #### 2D Datasets
+We evaluate our method on four 2D datasets: 8 Gaussians, Spiral, Checkerboard and Rings, and compare with a standard VAE and IntroVAE. 
+In the following figures we plot random samples from the models and a density estimation, obtained by approximating \\(p(x)\\) with \\(\exp(ELBO)\\).
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/samples_plot_png_f.PNG" style="height:250px">
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/density_plot_png_f.PNG" style="height:250px">
 </p>
 
 #### Image Datasets
+We evaluate Soft-IntroVAE on image synthesis in terms of both inference (i.e., reconstruction) and sampling, and experiment with two convolution-based architectures: 
+IntroVAE's [1] encoder-decoder architecture with residual-based convolutional layers and ALAE's [4] style-based autoencoder architecture,
+which adopted StyleGAN's style generator to a style-based encoder.
+At the head of this page, we show samples from the style-based Soft-IntroVAE when traind on FFHQ and reconstructions of test data when traind on CelebA-HQ, both at 256x256 resolution.
+In the following figures, we show samples (left) and reconstructions of test data (right) from the residual-based convolutional Soft-IntroVAE when trained on CIFAR10.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cifar10_samples.png" style="width:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cifar10_recons.png" style="width:300px">
+</p>
+
+Next, the following figure shows smooth interpolation between the latent vectors of two images from S-IntroVAE trained on the CelebA-HQ dataset.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/celeba_interpolations.jpg" style="width:300px">
+</p>
 
 ### Other Applications
 
@@ -99,7 +118,7 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
 1. Huaibo Huang, Zhihang Li, Ran He, Zhenan Sun, and Tie-niu Tan. Introvae: Introspective variational autoencoders forphotographic image synthesis. In Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS’18.
 2. Aviv Gabbay and Yedid Hoshen. Demystifying inter-class disentanglement. In International Conference on Learning Representations, 2019.
 3. Eric  Nalisnick,  Akihiro  Matsukawa,  Yee  Whye  Teh,  Di-lan Gorur,  and Balaji Lakshminarayanan. Do deep generative models know what they don’t know?. In International Conference on Learning Representations, 2019.
-
+4. Stanislav Pidhorskyi, Donald A. Adjeroh, and Gianfranco Doretto. Adversarial Latent Autoencoders. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
 
 You can use the [editor on GitHub](https://github.com/taldatech/soft-intro-vae-web/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 $$ X^2 = C $$
