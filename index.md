@@ -73,15 +73,31 @@ We evaluate Soft-IntroVAE on image translation, the task of learning disentangle
 Our focus is _unsupervised_ image translation, where no labels are used at any point. We adopt the two-encoder architecture proposed in LORD [2], where one encoder is for the class and the other for the content.
 The separation to two encoders imposes strong inductive bias, as it explicitly learns different representations for the class and content.
 Content transfer is performed by taking a pair of images \\((x_i, x_j)\\), encoding them to \\( ([z_i^{class}, z_i^{content}], [[z_j^{class}, z_j^{content}]) \\) and then exchanging the content latents such that the input to the decoder is \\( ([z_i^{class}, z_j^{content}], [[z_j^{class}, z_i^{content}]) \\).
-This is depicted in the following figure:
+This is depicted in the following figures:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cars_3d_plot_3.png" style="height:250px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/kth_plot_1.png" style="height:250px">
+</p>
 
 
 #### Out-of-Distribution (OOD) Detection
+One common application of likelihood-based generative models is detecting novel data, or out-of-distribution (OOD) detection. 
+Typically in an unsupervised setting, where only in-distribution data is seen during training, the inference modules in these models are _expected_ to assign in-distribution data high likelihood, while OOD data should have low likelihood. 
+Surprisingly, Nalisnick et al. [3] showed that for some image datasets, density-based models, such as VAEs and flow-based models, cannot distinguish between images from different datasets, when trained only on one of the datasets.
+We use Soft-IntroVAE to estimate the log-likelihood of the data, using importance-weighted sampling from the trained models. 
+In the following figures, histogram of log-likelihoods is shown when the models are trained on CIFAR10, where the left figure is of the standard VAE and the right is of Soft-IntroVAE.
+It can be seen that using the standard VAE, samples from SVHN are assigned higher likelihood than the original data (CIFAR10) aligning with the findings of [3], while Soft-IntroVAE correctly assigns higher likelihoods to it.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_vae.png" style="height:250px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_soft_intro_vae.png" style="height:250px">
+</p>
 
 ### References
-[1] IntroVAE
-[2] LORD
+1. IntroVAE
+2. LORD
+3. Nalisnick
 
 
 OOD, Image translation
