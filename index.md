@@ -91,7 +91,7 @@ In the following figures, histogram of log-likelihoods is shown when the models 
 It can be seen that using the standard VAE, samples from SVHN are assigned higher likelihood than the original data (CIFAR10) aligning with the findings of [3], while Soft-IntroVAE correctly assigns higher likelihoods to it.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="width:500px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="width:600px">
 </p>
 
 ### References
