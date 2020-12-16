@@ -76,12 +76,13 @@ Content transfer is performed by taking a pair of images \\((x_i, x_j)\\), encod
 This is depicted in the following figures:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cars_3d_plot_3.png" style="height:250px">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/kth_plot_1.png" style="height:250px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cars_3d_plot_3.png" style="height:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/kth_plot_1.png" style="height:300px">
 </p>
 
 
 #### Out-of-Distribution (OOD) Detection
+
 One common application of likelihood-based generative models is detecting novel data, or out-of-distribution (OOD) detection. 
 Typically in an unsupervised setting, where only in-distribution data is seen during training, the inference modules in these models are _expected_ to assign in-distribution data high likelihood, while OOD data should have low likelihood. 
 Surprisingly, Nalisnick et al. [3] showed that for some image datasets, density-based models, such as VAEs and flow-based models, cannot distinguish between images from different datasets, when trained only on one of the datasets.
@@ -90,8 +91,7 @@ In the following figures, histogram of log-likelihoods is shown when the models 
 It can be seen that using the standard VAE, samples from SVHN are assigned higher likelihood than the original data (CIFAR10) aligning with the findings of [3], while Soft-IntroVAE correctly assigns higher likelihoods to it.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_vae.png" style="height:250px">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_soft_intro_vae.png" style="height:250px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="height:350px">
 </p>
 
 ### References
