@@ -95,12 +95,11 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
 </p>
 
 ### References
-1. IntroVAE
-2. LORD
-3. Nalisnick
 
+1. Huaibo Huang, Zhihang Li, Ran He, Zhenan Sun, and Tie-niu Tan. Introvae: Introspective variational autoencoders forphotographic image synthesis. In Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS’18.
+2. Aviv Gabbay and Yedid Hoshen. Demystifying inter-class disentanglement. In International Conference on Learning Representations, 2019.
+3. Eric  Nalisnick,  Akihiro  Matsukawa,  Yee  Whye  Teh,  Di-lan Gorur,  and Balaji Lakshminarayanan. Do deep generative models know what they don’t know?. In International Conference on Learning Representations, 2019.
 
-OOD, Image translation
 
 You can use the [editor on GitHub](https://github.com/taldatech/soft-intro-vae-web/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 $$ X^2 = C $$
