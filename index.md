@@ -67,6 +67,23 @@ $$ \mathcal{L}_{D_{\theta}}(x,z) = $$
 
 ### Other Applications
 
+#### Image Translation
+
+We evaluate Soft-IntroVAE on image translation, the task of learning disentangled representations for _class_ and _content_, and transferring content between classes (e.g. given two images of cars from different visual classes, rotate the first car to be in the angle of the second car, without altering the car visualization).
+Our focus is _unsupervised_ image translation, where no labels are used at any point. We adopt the two-encoder architecture proposed in LORD [2], where one encoder is for the class and the other for the content.
+The separation to two encoders imposes strong inductive bias, as it explicitly learns different representations for the class and content.
+Content transfer is performed by taking a pair of images \\((x_i, x_j)\\), encoding them to \\( ([z_i^{class}, z_i^{content}], [[z_j^{class}, z_j^{content}]) \\) and then exchanging the content latents such that the input to the decoder is \\( ([z_i^{class}, z_j^{content}], [[z_j^{class}, z_i^{content}]) \\).
+This is depicted in the following figure:
+
+
+#### Out-of-Distribution (OOD) Detection
+
+
+### References
+[1] IntroVAE
+[2] LORD
+
+
 OOD, Image translation
 
 You can use the [editor on GitHub](https://github.com/taldatech/soft-intro-vae-web/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
