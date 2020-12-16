@@ -76,8 +76,8 @@ Content transfer is performed by taking a pair of images \\((x_i, x_j)\\), encod
 This is depicted in the following figures:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cars_3d_plot_3.png" style="height:300px">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/kth_plot_1.png" style="height:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/cars_3d_plot_3.png" style="width:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/kth_plot_1.png" style="width:300px">
 </p>
 
 
@@ -91,7 +91,7 @@ In the following figures, histogram of log-likelihoods is shown when the models 
 It can be seen that using the standard VAE, samples from SVHN are assigned higher likelihood than the original data (CIFAR10) aligning with the findings of [3], while Soft-IntroVAE correctly assigns higher likelihoods to it.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="height:350px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="width:300px">
 </p>
 
 ### References
