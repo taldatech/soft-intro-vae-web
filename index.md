@@ -72,7 +72,7 @@ $$ d^* \in \argmin_d \{KL(p_{data} || p_d) \} + \gamma H(p_d(x)) ,$$
 where \\( H(p_d(x)) \\) denotes the Shannon entropy.
 
 
-In the paper, we prove that for \\( q^{\*} = p_{d^{\*}}(z\|x) \\)
+In the paper, we prove that for \\( q^{\*} = p_{d^{\*}}(z\|x) \\), the tuple \\( ( q^{\*}, d^{\*} ) \\) is a Nash equilibrium of the game.
 
 
 
