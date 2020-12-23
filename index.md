@@ -49,7 +49,7 @@ $$ \mathcal{L}_{E_{\phi}}(x,z) = ELBO(x) - \frac{1}{\alpha}\exp \left( \alpha EL
 
 $$ \mathcal{L}_{D_{\theta}}(x,z) = ELBO(x) +\gamma ELBO \left( D_{\theta}(z) \right),$$
 
-where \((\alpha\\) and \\(\gamme \\)) are hyperparameters which are set to \((\alpha=2\\) and \\(\gamma=1\\) in all our experiments.
+where \\( \alpha \\) and \\( \gamma \\)) are hyperparameters which are set to \\( \alpha=2 \\) and \\( \gamma=1 \\) in all our experiments.
 
 This objective portrays a game between the encoder and the decoder: the encoder is induced to distinguish, through the ELBO value, between real and generated samples, while the decoder is induced to generate samples the `fool' the encoder.
 
@@ -63,7 +63,12 @@ Soft-IntroVAE vs. IntroVAE [1]:
 </p>
 
 ### Main Theoretical Result
+Our main result, which we analyze in the paper, is that unlike GANs, the S-IntroVAE model does not converge to the data distribution, but to an entropy-regularized version of it.
+Mathematically, representing the encoder as \\( q \doteq q(z|x)\\) and the decoder as \\( d \doteq p_d(x|z) \\), the optimal decoder satisfies:
+$$ d^* \in \argmin_d \{KL(p_{data} || p_d) \} + \gamma H(p_d(x)) ,$$
+where \(( H(p_d(x)) \\) denotes the Shannon entropy.
 
+In the paper, we prove that for \\( q^* = p_{d^*}(z|x)\\), \\( (q*, d*)\\) is a Nash equilibrium of the game.
 
 
 ### Implementation
@@ -139,40 +144,3 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
 2. Aviv Gabbay and Yedid Hoshen. Demystifying inter-class disentanglement. In International Conference on Learning Representations, 2019.
 3. Eric  Nalisnick,  Akihiro  Matsukawa,  Yee  Whye  Teh,  Di-lan Gorur,  and Balaji Lakshminarayanan. Do deep generative models know what they don’t know?. In International Conference on Learning Representations, 2019.
 4. Stanislav Pidhorskyi, Donald A. Adjeroh, and Gianfranco Doretto. Adversarial Latent Autoencoders. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
-
-You can use the [editor on GitHub](https://github.com/taldatech/soft-intro-vae-web/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-$$ X^2 = C $$
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/taldatech/soft-intro-vae-web/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
