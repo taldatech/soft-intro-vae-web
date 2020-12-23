@@ -147,6 +147,18 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="width:600px">
 </p>
 
+### Gotta Catch ‘Em All
+
+Well done for reaching thus far! Here is a bonus: we curated a “Digital Monsters” dataset: ~4000 images of Pokemon, Digimon and Nexomon (yes, it’s a thing) and trained S-IntroVAE.
+In the figures below, on the left is a sample from the (very diverse) dataset (we used augmentations to enrich it), and on the right, samples generated from S-IntroVAE.
+We hope this does not give nightmares.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_data.png" style="width:300px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_generated_c.png" style="width:300px">
+</p>
+
+
 ### References
 
 1. Huaibo Huang, Zhihang Li, Ran He, Zhenan Sun, and Tie-niu Tan. Introvae: Introspective variational autoencoders forphotographic image synthesis. In Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS’18.
