@@ -63,6 +63,7 @@ Soft-IntroVAE vs. IntroVAE [1]:
 </p>
 
 ### Main Theoretical Result
+
 Our main result, which we analyze in the paper, is that unlike GANs, the S-IntroVAE model does not converge to the data distribution, but to an entropy-regularized version of it.
 Mathematically, representing the encoder as \\( q \doteq q(z|x)\\) and the decoder as \\( d \doteq p_d(x|z) \\), the optimal decoder satisfies:
 $$ d^* \in \argmin_d \{KL(p_{data} || p_d) \} + \gamma H(p_d(x)) ,$$
@@ -77,6 +78,8 @@ We provide code and Jupyter Notebook tutorials at our <a href="https://github.co
 <p align="center">
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/soft_intro_vae_tut_3_edit_0.gif" style="height:250px">
 </p>
+
+Note that in practoce, similary to IntroVAE [1], considering the 'reconstructions' as fake samples in addition to sampling from \\( p(z) \\) speeds-up the convergence.
 
 ### Results
 
