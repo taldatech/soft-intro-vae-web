@@ -49,7 +49,7 @@ $$ \mathcal{L}_{E_{\phi}}(x,z) = ELBO(x) - \frac{1}{\alpha}\exp \left( \alpha EL
 
 $$ \mathcal{L}_{D_{\theta}}(x,z) = ELBO(x) +\gamma ELBO \left( D_{\theta}(z) \right),$$
 
-where \\( \alpha \\) and \\( \gamma \\)) are hyperparameters which are set to \\( \alpha=2 \\) and \\( \gamma=1 \\) in all our experiments.
+where \\( \alpha \\) and \\( \gamma \\) are hyperparameters which are set to \\( \alpha=2 \\) and \\( \gamma=1 \\) in all our experiments.
 
 This objective portrays a game between the encoder and the decoder: the encoder is induced to distinguish, through the ELBO value, between real and generated samples, while the decoder is induced to generate samples the `fool' the encoder.
 
