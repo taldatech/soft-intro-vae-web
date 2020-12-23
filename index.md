@@ -75,7 +75,7 @@ where \\( H(p_d(x)) \\) denotes the Shannon entropy.
 
 
 
-the tuple \\( (q^*, d^*) \\) is a Nash equilibrium of the game.
+the tuple \\( ( q^{*}, d^{*} ) \\) is a Nash equilibrium of the game.
 
 
 ### Implementation
