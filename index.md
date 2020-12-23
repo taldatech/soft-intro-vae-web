@@ -154,8 +154,8 @@ In the figures below, on the left is a sample from the (very diverse) dataset (w
 We hope this does not give you nightmares.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_data.png" style="width:350px">
-  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_generated_c.png" style="width:350px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_data.png" style="width:320px">
+  <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/monsters_generated_c.png" style="width:320px">
 </p>
 
 
