@@ -6,13 +6,14 @@
 Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
   <br>
 </h1>
-  <p align="center">
-    <a href="https://github.com/taldatech">Tal Daniel</a> •
-    <a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
-	
-	Technion - Israel Institute of Technology
-
-  </p>
+<p align="center">
+<a href="https://github.com/taldatech">Tal Daniel</a> •
+<a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
+</p>
+ 
+<h2 align="center">
+  Technion - Israel Institute of Technology
+</h2>
   
 <h4 align="center">
 	<a href="https://github.com/taldatech/soft-intro-vae-pytorch">Code</a>|<a href="">Paper</a>
