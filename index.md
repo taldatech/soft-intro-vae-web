@@ -11,9 +11,9 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
 <a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
 </p>
  
-<h2 align="center">
+<h3 align="center">
   Technion - Israel Institute of Technology
-</h2>
+</h3>
   
 <h4 align="center">
 	<a href="https://github.com/taldatech/soft-intro-vae-pytorch">Code</a>|<a href="">Paper</a>
@@ -54,7 +54,22 @@ In this work, we take a step towards better understanding of the IntroVAE model,
 
 ### Overview
 
+Variational Autoencoder (VAE) is a generative model that belongs to the explicit density models family. VAEs use Variational Inference (VI) to optimize a lower bound on \\(\log p_{\theta}(x) \\), called the _evidence lower bound_ (ELBO) as follows:
 
+$$ \log p_{\theta}(x) \geq \mathbb{E}_{q_{\phi}}\left[\log p_{\theta} p(x \mid z) \right] - D_{KL}[q_{\phi}(z \mid x) \mid \mid p_{\theta}(z \mid x)] \triangleq ELBO(x;\phi,\theta), $$
+
+where \\( q_{\phi}(z \mid x) \\) is termed the _encoder_ and \\(p_{\theta}(x \mid x) \\) is termed the _decoder_.
+
+For the encoder, \\( E_{\phi}\\), and decoder, \\( D_{\theta}\\), the objective of VAE, which is _maximized_, is written as follows:
+
+$$ \mathcal{L}_{E_{\phi}}(x) = ELBO(x),$$
+
+
+$$ \mathcal{L}_{D_{\theta}}(x) = ELBO(x).$$
+
+For an in-depth tutorial on VAEs (theory and code), please visit [046202 - Unsupervised Learning and Data Analysis GitHub repository](https://github.com/taldatech/ee046202-unsupervised-learning-data-analysis).
+
+We introduce Soft-IntroVAE, a VAE that is trained adversarially in an introspective manner (i.e., no discriminator is needed).
 
 The objective of Soft-IntroVAE, which is _maximized_, is written as follows:
 
