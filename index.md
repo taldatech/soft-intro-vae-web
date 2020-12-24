@@ -56,9 +56,9 @@ In this work, we take a step towards better understanding of the IntroVAE model,
 
 Variational Autoencoder (VAE) is a generative model that belongs to the explicit density models family. VAEs use Variational Inference (VI) to optimize a lower bound on \\(\log p_{\theta}(x) \\), called the _evidence lower bound_ (ELBO) as follows:
 
-$$ \log p_{\theta}(x) \geq \mathbb{E}_{q_{\phi}}\left[\log p_{\theta} p(x \mid z) \right] - D_{KL}[q_{\phi}(z \mid x) \mid \mid p_{\theta}(z \mid x)] \triangleq ELBO(x;\phi,\theta), $$
+$$ \log p_{\theta}(x) \geq \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(x \mid z) \right] - D_{KL}[q_{\phi}(z \mid x) \mid \mid p(z)] \triangleq ELBO(x;\phi,\theta), $$
 
-where \\( q_{\phi}(z \mid x) \\) is termed the _encoder_ and \\(p_{\theta}(x \mid x) \\) is termed the _decoder_.
+where \\( q_{\phi}(z \mid x) \\) is termed the _encoder_ and \\(p_{\theta}(x \mid z) \\) is termed the _decoder_.
 
 For the encoder, \\( E_{\phi}\\), and decoder, \\( D_{\theta}\\), the objective of VAE, which is _maximized_, is written as follows:
 
