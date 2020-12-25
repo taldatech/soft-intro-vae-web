@@ -16,7 +16,7 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
 </h3>
   
 <h4 align="center">
-	<a href="https://github.com/taldatech/soft-intro-vae-pytorch">Code</a>|<a href="">Paper</a>
+	<a href="https://github.com/taldatech/soft-intro-vae-pytorch">Code</a>|<a href="https://arxiv.org/abs/2012.13253">Paper</a>
 </h4>
 
   
