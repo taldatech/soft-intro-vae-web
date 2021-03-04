@@ -1,4 +1,4 @@
-## Soft-IntroVAE Project Site
+## [CVPR 2021 Oral] Soft-IntroVAE Project Site
 
 
 <h1 align="center">
@@ -6,8 +6,13 @@
 Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
   <br>
 </h1>
+<h1 align="center">
+  <br>
+CVPR 2021 Oral
+  <br>
+</h1>
 <p align="center">
-<a href="https://github.com/taldatech">Tal Daniel</a> •
+<a href="https://taldatech.github.io">Tal Daniel</a> •
 <a href="https://avivt.github.io/avivt/">Aviv Tamar</a>
 </p>
  
@@ -41,6 +46,7 @@ Soft-IntroVAE: Analyzing and Improving Introspective Variational Autoencoders
     + [Other Applications](#other-applications)
       - [Image Translation](#image-translation)
       - [Out-of-Distribution (OOD) Detection](#out-of-distribution--ood--detection)
+      - [3D Point Cloud Generation](#3d-point-cloud-generation)
     + [Gotta Catch ‘Em All](#gotta-catch--em-all)
     + [References](#references)
 
@@ -168,6 +174,9 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
 <p align="center">
   <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/ood_combined.PNG" style="width:600px">
 </p>
+
+#### 3D Point Cloud Generation
+Coming soon, stay tuned!
 
 ### Gotta Catch ‘Em All
 
