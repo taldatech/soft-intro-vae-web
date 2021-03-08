@@ -176,7 +176,10 @@ It can be seen that using the standard VAE, samples from SVHN are assigned highe
 </p>
 
 #### 3D Point Cloud Generation
-Coming soon, stay tuned!
+To further demonstrate that Soft-IntroVAE is capable of handling different data types and architectures, we combine a PointNet-based [[5]](#references) encoder with a fully-connected decoder, to learn 3D point clouds from the ShapeNet dataset. The resulting model can reconstruct test samples and generate new ones. Following is an interpolation in the latent space between an airplane and a car.
+<p align="center">
+  <img src="https://github.com/taldatech/soft-intro-vae-web/raw/main/assets/3d_plane_to_car.gif" width="300">
+</p>
 
 ### Gotta Catch ‘Em All
 
@@ -196,3 +199,4 @@ We hope this does not give you nightmares.
 2. Aviv Gabbay and Yedid Hoshen. Demystifying inter-class disentanglement. In International Conference on Learning Representations, 2019.
 3. Eric  Nalisnick,  Akihiro  Matsukawa,  Yee  Whye  Teh,  Di-lan Gorur,  and Balaji Lakshminarayanan. Do deep generative models know what they don’t know?. In International Conference on Learning Representations, 2019.
 4. Stanislav Pidhorskyi, Donald A. Adjeroh, and Gianfranco Doretto. Adversarial Latent Autoencoders. In Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
+5. Qi, Charles R., et al. Pointnet: Deep learning on point sets for 3d classification and segmentation. Proceedings of the IEEE conference on computer vision and pattern recognition. 2017.
